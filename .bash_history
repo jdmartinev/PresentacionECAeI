@@ -10,3 +10,6 @@ git push -u origin main
 git add .
 git commit -m "Data"
 git push -u origin main
+git add .
+git commit -m "env"
+git push -u origin main

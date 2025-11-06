@@ -1,31 +1,51 @@
-# Ignore ALL folders except data/
+# ---------------------------------------------------
+# ✅ Ignore ALL folders except data/
+# ---------------------------------------------------
 */
 !/data/
-
-# Also allow the root folder itself
 !/
 
-# Re-allow common root files you want tracked
-!.gitignore
-!README.md
+# ---------------------------------------------------
+# ✅ Track these types of files everywhere
+# ---------------------------------------------------
 !*.py
 !*.ipynb
+!README.md
+!.gitignore
 
-# Ignore environment files
+# ---------------------------------------------------
+# ❌ Ignore unwanted server artifacts
+# ---------------------------------------------------
+.cursor-server
+.vscode-server
+.windsurf-server
+.bash_history
+
+# ---------------------------------------------------
+# ❌ Ignore all .env files
+# ---------------------------------------------------
 **/*.env
 *.env
 .env.*
 *.env.*
 
-# Python cache
+# ---------------------------------------------------
+# ❌ Python cache
+# ---------------------------------------------------
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 
-# Virtual environments
+# ---------------------------------------------------
+# ❌ Virtual environments
+# ---------------------------------------------------
 .venv/
 venv/
 
-# OS / Editor junk
+# ---------------------------------------------------
+# ❌ OS / Editor trash
+# ---------------------------------------------------
 .DS_Store
 .idea/
 .vscode/

@@ -1,2 +1,31 @@
+# Ignore ALL folders except data/
+*/
+!/data/
+
+# Also allow the root folder itself
+!/
+
+# Re-allow common root files you want tracked
+!.gitignore
+!README.md
+!*.py
+!*.ipynb
+
+# Ignore environment files
 **/*.env
 *.env
+.env.*
+*.env.*
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+venv/
+
+# OS / Editor junk
+.DS_Store
+.idea/
+.vscode/

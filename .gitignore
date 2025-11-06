@@ -49,3 +49,7 @@ venv/
 .DS_Store
 .idea/
 .vscode/
+
+.cursor-server
+.vscode-server
+.windsurf-server
